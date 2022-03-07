@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BadBank</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+    <link href="./BadBankStyles.css" rel="stylesheet" type="text/css">
+  </link>
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <!-- we will put our teact component inside this div -->
+    <div id="root">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BadBank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#/home.js/">Home</a>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#/createaccount.js/">Create Account</a></li>
+                  <li><a class="dropdown-item" href="#/deposit.js/">Deposit</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#/withdraw.js/">Withdraw</a></li>
+                  <li><a class="dropdown-item" href="#/alldata.js/">All Data</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enabled">Enabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Welcome To BadBank</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-router@5.2.1/umd/react-router.min.js" crossorigin></script>
+    <script
+      src="https://unpkg.com/react-router-dom@5.2.1/umd/react-router-dom.min.js"
+      crossorigin
+    ></script>
+
+    <!-- load our react component. -->
+    <script src="context.js" defer type="text/babel"></script>
+    <script src="navbar.js" defer type="text/babel"></script>
+    <script src="createaccount.js" defer type="text/babel"></script>
+    <script src="login.js" defer type="text/babel"></script>
+    <script src="deposit.js" defer type="text/babel"></script>
+    <script src="withdraw.js" defer type="text/babel"></script>
+    <script src="balance.js" defer type="text/babel"></script>
+    <script src="alldata.js" defer type="text/babel"></script>
+    <script src="home.js" defer type="text/babel"></script>
+    <script src="index.js" defer type="text/babel"></script>
+  </body>
+</html>
